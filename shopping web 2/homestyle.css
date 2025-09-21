@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: khaki;
+  
+}
+h2{
+    font-family: fantasy;
+    font-size: 200%;
+    
+}
+a:hover { color: red; }
+p{
+    font-size: 130%;
+}
+h3{
+    font-family: fantasy;
+    color: green;
+    
+}
+hr{
+  border: 2px dotted grey;
+}

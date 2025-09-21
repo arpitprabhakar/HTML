@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background-color: aliceblue;">
+   
+    <center>
+        <h1>Sports Registration Form</h1>
+    </center>
+    <fieldset>
+            <legend>Student Details</legend>
+            <form>
+            <b><label for="fname">Name: </label></b>
+            <input type="text" id="fname" name="fname">
+            <br><br>
+            <b><label for="pass">Password: </label></b>
+            <input type="password" id="pass" name="pass">
+
+            <br><br>
+            <b><label for="address">Address: </label></b><br>
+            <textarea id="address" name="address" rows="5" cols="50"></textarea><br>
+            
+            <b><label for="gender">Gender: </label></b><br>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="others">Others</label><br> 
+            
+            <b><label for="age">Age: </label></b><br>
+            <select id="age" name="age" >
+                <option value="" disabled selected>--Choose Age--</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+            </select>
+            <br>
+            <b><label for="course">Course: </label></b><br>
+            <select id="course" name="course" >
+                <option value="" disabled selected>--Choose course--</option>
+                <option value="btech">B-tech</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">B.sc</option>
+                <option value="others">others</option>
+            </select>
+         
+    </fieldset>
+    <br><br><br><br>
+    <fieldset>
+        <legend>Select game(s)</legend>
+        <h4><b>Hold (ctrl/cmd) to select multiple</b></h4>
+        <b><label for="game">Sports: </label></b>
+        <select id="game" name="game" multiple>
+            <option value="" disabled selected>--choose sport--</option>
+            <option value="Cricket">Cricket</option>
+            <option value="Cricket">Football</option>
+            <option value="Cricket">Basketball</option>
+            <option value="Cricket">Badminton</option>
+            <option value="Cricket">Table Tennis</option>
+            <option value="Cricket">Volleyball</option>
+            
+        </select>
+    </fieldset>
+    <br><br>
+    <center>
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+    </center>
+    </form>
+</body>
+</html>

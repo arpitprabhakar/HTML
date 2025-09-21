@@ -1,0 +1,16 @@
+body{
+    background-color: khaki;
+    font-family: Arial, sans-serif;
+}
+hr{
+    border: 2px dotted grey;
+}
+p{
+    font-size: 130%;
+}
+h2{
+    font-family: fantasy;
+    font-size: 200%;
+    
+}
+a:hover { color: red; }
