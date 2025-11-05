@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      background: #2a7de1;
+      padding: 15px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    nav ul li a {
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+    color: #ffeb3b;
+    }
+    nav ul li a::after {
+    content: "";
+    position: absolute;    
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: #ffeb3b;
+    transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a:focus::after {
+    width: 100%;
+    }
+    .content {
+    text-align: center;
+    padding: 80px;
+    background: #f4f4f4;
+    }
+    .content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    }
+
+    .content p {
+    font-size: 18px;
+    color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <h1>Hover or Tab to Navigation Items</h1>
+    <p>You’ll see scaling, color change, and animated underline.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoom button</title>
+    <style>
+        .zoom-box {
+            width: 150px;
+            height: 150px;
+            margin: 40px auto;
+            background: linear-gradient(135deg, #007bff, #4facfe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .zoom-box:hover {
+        transform: scale(1.2);
+        background: linear-gradient(135deg, #007bff, #4facfe);
+        }
+
+    </style>
+</head>
+<body>
+    <button class="zoom-box">zoom</button>
+</body>
+</html>

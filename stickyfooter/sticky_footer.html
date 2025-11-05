@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Footer</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+
+    footer {
+      border: 2px solid #31708f;
+      text-align: left;
+      position: sticky;
+      bottom: 0;
+    }
+
+    footer .file-list {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    footer .file-list div {
+      display: flex;
+      flex-direction: column;
+      min-width: 150px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #0073e6;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+    <main><p>page content</p></main>
+    <footer>
+    <b><h3>~/</b></h3>
+    <div class="file-list">
+      <div>
+        <a href="D:\VSCODE\html\exp3\experiment 3.docx"><img src="D:\VSCODE\html\exp3\word.png" alt="Word" height="25" width="25"> experiment 3.docx</a>
+        <a href="D:\VSCODE\html\exp3\navigation_bar.html"><img src="D:\VSCODE\html\exp3\htmlicon.png" alt="html"  height="25" width="25">Navigation Bar</a>
+        <a href="D:\VSCODE\html\exp3\zoom.html"><img src="D:\VSCODE\html\exp3\htmlicon.png" alt="html"  height="25" width="25">Zoom in.html</a>
+      </div>
+      <div>
+        <a href="D:\VSCODE\html\exp3\biodata.html"><img src="D:\VSCODE\html\exp3\htmlicon.png" alt="html"  height="25" width="25">Bio Data.html</a>
+        <a href="D:\VSCODE\html\exp3\navigation_bar.html"><img src="D:\VSCODE\html\exp3\htmlicon.png" alt="html"  height="25" width="25">Navigation.html</a>
+      </div>
+      <div>
+        <a href="D:\VSCODE\html\exp3\experiment 3.pdf"><img src="D:\VSCODE\html\exp3\pdf.png" alt="Word"  height="25" width="25">Experiment 3.pdf</a>
+        <a href="D:\VSCODE\html\exp3\sticky_footer.html"><img src="D:\VSCODE\html\exp3\htmlicon.png" alt="html"  height="25" width="25">Sticky Footer.pdf</a>
+      </div>
+    </div>
+    </footer>
+</body>
+</html>
